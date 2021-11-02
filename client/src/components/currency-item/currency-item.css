@@ -1,0 +1,62 @@
+.currency-item {
+	position: relative;
+	width: 120px;
+	height: 80px;
+	padding: 15px 20px;
+	background: #ffffff0a;
+	border-radius: 14px;
+	box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15),
+		inset -5px -5px 15px rgba(225, 255, 255, 0.15),
+		5px 5px 15px rgba(0, 0, 0, 0.15),
+		-5px -5px 15px rgba(225, 255, 255, 0.15);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.currency-item:hover {
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15),
+		-5px -5px 15px rgba(225, 255, 255, 0.15);
+	color: rgb(56, 80, 0);
+}
+
+.currency-item:hover .favorite-add {
+	opacity: 1;
+}
+
+.currency-item__bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.currency-item__price {
+	font-weight: 700;
+}
+
+.currency-item__exchange {
+	font-style: italic;
+	font-size: 0.7rem;
+}
+
+.currency-item__ticker {
+	font-size: 0.8rem;
+}
+
+.currency-item__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 28px;
+}
+
+.favorite-add {
+	font-weight: 700;
+	font-size: 1.2rem;
+	opacity: 0;
+	color: hsla(20, 4%, 85%, 0.39);
+	transition: opacity 0.2s ease-in-out;
+}

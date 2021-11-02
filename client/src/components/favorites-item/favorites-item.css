@@ -1,0 +1,52 @@
+.favorites-item {
+	position: relative;
+	width: 215px;
+	padding: 15px 20px;
+	background: #ffffff0a;
+	border-radius: 10px;
+	box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15),
+		inset -5px -5px 15px rgba(225, 255, 255, 0.15),
+		5px 5px 15px rgba(0, 0, 0, 0.15),
+		-5px -5px 15px rgba(225, 255, 255, 0.15);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	color: rgb(56, 80, 0);
+	cursor: default;
+}
+
+.favorites-sub-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.favorites-item:hover .favorites-item__remove {
+	color: hsl(14, 4%, 85%);
+}
+
+.favorites-sub-item:not(:first-child):not(:last-child) span:first-child {
+	font-style: italic;
+}
+
+.favorites-sub-item:not(:first-child):not(:last-child) span:last-child {
+	font-weight: 700;
+}
+
+.favorites-sub-item:first-child span:first-child {
+	font-size: 1.1rem;
+	color: hsl(14, 4%, 85%);
+}
+
+.favorites-sub-item:last-child span:last-child {
+	font-size: 1.1rem;
+	color: hsl(14, 4%, 85%);
+	font-size: 0.8rem;
+}
+
+.favorites-item__remove {
+	font-size: 1.2rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: color 0.2s ease-in-out;
+}

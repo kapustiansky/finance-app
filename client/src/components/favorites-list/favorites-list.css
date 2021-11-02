@@ -1,0 +1,12 @@
+.favorites-container {
+	padding: 0 20px;
+}
+
+.favorites-wrapper {
+	display: flex;
+	gap: 3vw;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}

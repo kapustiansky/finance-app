@@ -1,0 +1,11 @@
+.main-container {
+	padding: 0 20px;
+}
+
+.currency-wrapper {
+	display: flex;
+	gap: 3vw;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 10vh;
+}
